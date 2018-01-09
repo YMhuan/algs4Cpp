@@ -4,17 +4,19 @@
 #include<utility>
 #include<vector>
 
-using namespace algs4Cpp;
+
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using std::vector;
 using std::pair;
 using std::make_pair;
 using std::exception;
+using algs4Cpp::UF;
+
 
 
 namespace algs4CppTest
 {		
-	TEST_CLASS(test_UF)
+	TEST_CLASS(UFTests)
 	{
 	private:
 		UF unionSite(vector<pair<int, int>> links, int N)
@@ -24,14 +26,14 @@ namespace algs4CppTest
 			{
 				int p = pair.first;
 				int q = pair.second;
-				if (uf.conntected(p, q)) continue;
+				if (uf.connected(p, q)) continue;
 				uf.unionSite(p, q);
 			}
 			return uf;
 		}
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(UFTest1)
 		{
 			vector<pair<int, int>> set1
 			{

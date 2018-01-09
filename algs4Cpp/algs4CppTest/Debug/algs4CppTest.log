@@ -1,5 +1,20 @@
 ﻿  stdafx.cpp
-  test_UF.cpp
-     Creating library G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.lib and object G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.exp
-  algs4CppTest.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.dll
-  algs4CppTest.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.pdb (Partial PDB)
+  VectorTests.cpp
+  UF_Tests.cpp
+  unittest1.cpp
+  QueueTests.cpp
+  MergeXTests.cpp
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\mergex.h(75): error C2275: 'std::less<Item>': illegal use of this type as an expression
+          with
+          [
+              Item=std::string
+          ]
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\mergex.h(75): note: see declaration of 'std::less<Item>'
+          with
+          [
+              Item=std::string
+          ]
+  MergeTests.cpp
+  BinarySearchTests.cpp
+  BagTests.cpp
+  Generating Code...

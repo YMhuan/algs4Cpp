@@ -3,16 +3,24 @@
 #include<stdexcept>
 #include<string>
 #include<iostream>
+#include<memory>
+
+//#define DllOutput
+#ifdef DllOutput
+	#define DllExport   __declspec( dllexport )  
+#else
+	#define DllExport
+#endif
 
 namespace algs4Cpp {
-	class UF {
+	class DllExport UF {
 	private:
 		std::vector<int> parent;
 		std::vector<char> rank;
 		int count;
 
 	public:
-		UF(int N) :count(N) {
+		UF(int N) :count(N),parent(), rank() {
 			if (N < 0) throw std::invalid_argument("");
 			parent.reserve(N);
 			rank.reserve(N);
@@ -35,7 +43,7 @@ namespace algs4Cpp {
 			return count;
 		}
 
-		bool conntected(int p, int q) {
+		bool connected(int p, int q) {
 			return find(p) == find(q);
 		}
 
@@ -68,7 +76,7 @@ namespace algs4Cpp {
 			UF uf(n);
 			int p, q;
 			while (std::cin >> p >> q) {
-				if (uf.conntected(p, q)) continue;
+				if (uf.connected(p, q)) continue;
 				uf.unionSite(p, q);
 				std::cout << p << " " << q << std::endl;
 			}

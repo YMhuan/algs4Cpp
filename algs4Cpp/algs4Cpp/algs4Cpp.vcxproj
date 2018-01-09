@@ -146,10 +146,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bag.cpp" />
+    <ClCompile Include="BinarySearch.cpp" />
+    <ClCompile Include="Merge.cpp" />
+    <ClCompile Include="MergeX.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="QuickFindUF.cpp" />
+    <ClCompile Include="QuickUnionUF.cpp" />
     <ClCompile Include="UF.cpp" />
+    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="WeightedQuickUnionUF.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bag.h" />
+    <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="Merge.h" />
+    <ClInclude Include="MergeX.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="QuickFindUF.h" />
+    <ClInclude Include="QuickUnionUF.h" />
     <ClInclude Include="UF.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="WeightedQuickUnionUF.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

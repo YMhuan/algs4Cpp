@@ -154,13 +154,20 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BagTests.cpp" />
+    <ClCompile Include="BinarySearchTests.cpp" />
+    <ClCompile Include="MergeTests.cpp" />
+    <ClCompile Include="MergeXTests.cpp" />
+    <ClCompile Include="QueueTests.cpp" />
+    <ClCompile Include="unittest1.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="test_UF.cpp" />
+    <ClCompile Include="UF_Tests.cpp" />
+    <ClCompile Include="VectorTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\algs4Cpp\algs4Cpp.vcxproj">
