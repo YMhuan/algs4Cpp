@@ -156,9 +156,11 @@
   <ItemGroup>
     <ClCompile Include="BagTests.cpp" />
     <ClCompile Include="BinarySearchTests.cpp" />
+    <ClCompile Include="MergeBUTests.cpp" />
     <ClCompile Include="MergeTests.cpp" />
     <ClCompile Include="MergeXTests.cpp" />
     <ClCompile Include="QueueTests.cpp" />
+    <ClCompile Include="ShellTests.cpp" />
     <ClCompile Include="unittest1.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

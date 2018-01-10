@@ -149,10 +149,12 @@
     <ClCompile Include="Bag.cpp" />
     <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="Merge.cpp" />
+    <ClCompile Include="MergeBU.cpp" />
     <ClCompile Include="MergeX.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="QuickFindUF.cpp" />
     <ClCompile Include="QuickUnionUF.cpp" />
+    <ClCompile Include="Shell.cpp" />
     <ClCompile Include="UF.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="WeightedQuickUnionUF.cpp" />
@@ -160,11 +162,14 @@
   <ItemGroup>
     <ClInclude Include="Bag.h" />
     <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="LinkedStack.h" />
     <ClInclude Include="Merge.h" />
+    <ClInclude Include="MergeBU.h" />
     <ClInclude Include="MergeX.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="QuickFindUF.h" />
     <ClInclude Include="QuickUnionUF.h" />
+    <ClInclude Include="Shell.h" />
     <ClInclude Include="UF.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="WeightedQuickUnionUF.h" />

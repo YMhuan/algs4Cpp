@@ -30,7 +30,7 @@ namespace algs4CppTest
 			vector<string> cvec1(svec);
 			vector<string> cvec2(svec);
 			Merge<string>::sort(svec);
-			std::sort(cvec1.begin(), cvec1.end());
+			std::stable_sort(cvec1.begin(), cvec1.end());
 			Assert::IsTrue(svec == cvec1);
 
 

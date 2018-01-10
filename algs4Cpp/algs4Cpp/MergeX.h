@@ -15,8 +15,8 @@ namespace algs4Cpp {
 	    static const int CUTOFF = 7;
 
 		static void merge(std::vector<Item> &src, std::vector<Item> &dst, int lo, int mid, int hi, const std::function<bool(Item, Item)> &less) {
-			assert(isSorted(src, lo, mid));
-			assert(isSorted(src, mid + 1, hi));
+			assert(isSorted(src, lo, mid,less));
+			assert(isSorted(src, mid + 1, hi,less));
 
 			int i = lo, j = mid + 1;
 			for (int k = lo; k <= hi; ++k) {
@@ -26,7 +26,7 @@ namespace algs4Cpp {
 				else dst[k] = src[i++];
 			}
 
-			assert(isSorted(dst, lo, hi));
+			assert(isSorted(dst, lo, hi,less));
 		}
 
 		static void sort(std::vector<Item>& src, std::vector<Item>& dst, int lo, int hi, const std::function<bool(Item, Item)> &less) {
@@ -72,7 +72,7 @@ namespace algs4Cpp {
 
 	public:
 
-		static void sort(std::vector<Item>& a, const std::function<bool(Item, Item)> &less=std::less<Item>) {
+		static void sort(std::vector<Item>& a, const std::function<bool(const Item &, const Item &)> &less = std::less<>{}) {
 			std::vector<Item> aux(a);
 			sort(aux, a, 0, a.size() - 1, less);
 			assert(isSorted(a,less));

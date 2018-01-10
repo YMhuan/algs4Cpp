@@ -1,20 +1,38 @@
-﻿  stdafx.cpp
-  VectorTests.cpp
-  UF_Tests.cpp
-  unittest1.cpp
-  QueueTests.cpp
-  MergeXTests.cpp
-g:\ksc\algorithmsc++\algs4cpp\algs4cpp\mergex.h(75): error C2275: 'std::less<Item>': illegal use of this type as an expression
+﻿  ShellTests.cpp
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(30): warning C4018: '<': signed/unsigned mismatch
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(28): note: while compiling class template member function 'void algs4Cpp::Shell<std::string>::hSort(std::vector<std::string,std::allocator<_Ty>> &,int)'
           with
           [
-              Item=std::string
+              _Ty=std::string
           ]
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\mergex.h(75): note: see declaration of 'std::less<Item>'
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(46): note: see reference to function template instantiation 'void algs4Cpp::Shell<std::string>::hSort(std::vector<std::string,std::allocator<_Ty>> &,int)' being compiled
           with
           [
-              Item=std::string
+              _Ty=std::string
           ]
-  MergeTests.cpp
-  BinarySearchTests.cpp
-  BagTests.cpp
-  Generating Code...
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\shelltests.cpp(30): note: see reference to class template instantiation 'algs4Cpp::Shell<std::string>' being compiled
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(15): warning C4018: '<': signed/unsigned mismatch
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(14): note: while compiling class template member function 'bool algs4Cpp::Shell<std::string>::isSorted(std::vector<std::string,std::allocator<_Ty>> &)'
+          with
+          [
+              _Ty=std::string
+          ]
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(49): note: see reference to function template instantiation 'bool algs4Cpp::Shell<std::string>::isSorted(std::vector<std::string,std::allocator<_Ty>> &)' being compiled
+          with
+          [
+              _Ty=std::string
+          ]
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(22): warning C4018: '<': signed/unsigned mismatch
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(21): note: while compiling class template member function 'bool algs4Cpp::Shell<std::string>::isHsorted(std::vector<std::string,std::allocator<_Ty>> &,int)'
+          with
+          [
+              _Ty=std::string
+          ]
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(35): note: see reference to function template instantiation 'bool algs4Cpp::Shell<std::string>::isHsorted(std::vector<std::string,std::allocator<_Ty>> &,int)' being compiled
+          with
+          [
+              _Ty=std::string
+          ]
+     Creating library G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.lib and object G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.exp
+  algs4CppTest.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.dll
+  algs4CppTest.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.pdb (Partial PDB)
