@@ -44,7 +44,7 @@ namespace algs4Cpp {
 			return first.item;
 		}
 
-		void enqueue(Item item) {
+		void enqueue(const Item &item) {
 			Node* oldlast = last;
 			last = new Node;
 			last->item = item;

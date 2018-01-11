@@ -41,7 +41,7 @@ namespace algs4Cpp {
 			return n;
 		}
 
-		void push(Item item) {
+		void push(const Item &item) {
 			Node *oldfirst = first;
 			first = new Node;
 			first->item = item;
