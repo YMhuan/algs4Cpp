@@ -1,6 +1,5 @@
 #pragma once
 #include<stdexcept>
-#include<string>
 
 namespace algs4Cpp {
 	template<typename Item> class Queue {
@@ -22,6 +21,15 @@ namespace algs4Cpp {
 
 	public:
 		Queue() = default;
+		Queue(const Queue &) = delete;
+		Queue &operator=(const Queue &) = delete;
+		~Queue() {
+			while (first) {
+				Node *oldfirst = first;
+				first = oldfirst->next;
+				delete oldfirst;
+			}
+		}
 
 		bool isEmpty() const {
 			return first == nullptr;
@@ -48,7 +56,9 @@ namespace algs4Cpp {
 		Item dequeue() {
 			check();
 			Item item = first->item;
-			first = first->next;
+			Node *oldfirst = first;
+			first = oldfirst->next;
+			delete oldfirst;
 			--n;
 			if (isEmpty()) last = nullptr;
 			return item;
@@ -99,6 +109,18 @@ namespace algs4Cpp {
 	private:
 		void check() const {
 			if (isEmpty()) throw std::underflow_error("Queue underflow");
+		}
+
+	public:
+		static void mainTest(int argc=0, char *argv[]=nullptr) {
+			Queue<Item> queue;
+
+
+			for (int i = 0; i != 5; ++i) {
+				queue.enqueue(Item());
+			}
+
+			Item x = queue.dequeue();
 		}
 	};
 }

@@ -16,17 +16,17 @@ namespace algs4CppTest
 		TEST_METHOD(QueueTest1)
 		{
 			Queue<string> queue;
-			Assert::IsTrue(queue.isEmpty() == true);
-			Assert::IsTrue(queue.size() == 0);
+			Assert::IsTrue(queue.isEmpty() == true, L"", LINE_INFO());
+			Assert::IsTrue(queue.size() == 0, L"", LINE_INFO());
 
 			queue.enqueue("Kevin Wayne");
 			queue.enqueue("Robert Sedgewick");
 			queue.enqueue("Einsten");
-			Assert::IsTrue(queue.size() == 3);
+			Assert::IsTrue(queue.size() == 3, L"", LINE_INFO());
 
 			string item = queue.dequeue();
-			Assert::IsTrue(queue.size() == 2);
-			Assert::IsTrue(item== "Kevin Wayne");
+			Assert::IsTrue(queue.size() == 2, L"", LINE_INFO());
+			Assert::IsTrue(item== "Kevin Wayne", L"", LINE_INFO());
 		}
 
 	};

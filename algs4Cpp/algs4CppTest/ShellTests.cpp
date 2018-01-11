@@ -28,7 +28,7 @@ namespace algs4CppTest
 				svec.push_back(s);
 			}
 			Shell<string>::sort(svec);
-			Assert::IsTrue(std::is_sorted(svec.begin(),svec.end()));
+			Assert::IsTrue(std::is_sorted(svec.begin(),svec.end()), L"", LINE_INFO());
 
 		}
 

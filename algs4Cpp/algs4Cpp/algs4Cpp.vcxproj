@@ -26,7 +26,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -148,6 +148,8 @@
   <ItemGroup>
     <ClCompile Include="Bag.cpp" />
     <ClCompile Include="BinarySearch.cpp" />
+    <ClCompile Include="LinkedStack.cpp" />
+    <ClCompile Include="MemoryLeakTests.cpp" />
     <ClCompile Include="Merge.cpp" />
     <ClCompile Include="MergeBU.cpp" />
     <ClCompile Include="MergeX.cpp" />

@@ -31,7 +31,7 @@ namespace algs4CppTest
 			vector<string> cvec2(svec);
 			Merge<string>::sort(svec);
 			std::stable_sort(cvec1.begin(), cvec1.end());
-			Assert::IsTrue(svec == cvec1);
+			Assert::IsTrue(svec == cvec1, L"", LINE_INFO());
 
 
 			vector<int> index1 = Merge<string>::indexSort(cvec2);
@@ -41,7 +41,7 @@ namespace algs4CppTest
 				index2.push_back(i);
 			}
 			std::stable_sort(index2.begin(), index2.end(), [&cvec2](int a, int b) {return cvec2[a] < cvec2[b]; });
-			Assert::IsTrue(index1 == index2);
+			Assert::IsTrue(index1 == index2, L"", LINE_INFO());
 		}
 
 	};

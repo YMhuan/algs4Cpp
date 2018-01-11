@@ -44,7 +44,7 @@ namespace algs4CppTest
 			};
 			
 			UF uf = unionSite(set1, set1.size());
-			Assert::IsTrue(uf.siteCount()==set1.size());
+			Assert::IsTrue(uf.siteCount()==set1.size(), L"", LINE_INFO());
 
 			vector<pair<int, int>> set2
 			{
@@ -56,7 +56,7 @@ namespace algs4CppTest
 			};
 			uf = unionSite(set2, 8);
 
-			Assert::IsTrue(uf.siteCount()==3);
+			Assert::IsTrue(uf.siteCount()==3, L"", LINE_INFO());
 
 
 			bool exceptionThrown = false;
@@ -66,12 +66,12 @@ namespace algs4CppTest
 					set2[0] = make_pair(7, 8);
 					uf = unionSite(set2, 8);
 				};
-				Assert::ExpectException<std::invalid_argument>(funcPtr);
+				Assert::ExpectException<std::invalid_argument>(funcPtr, L"", LINE_INFO());
 			}
 			catch(exception e){
 				exceptionThrown = true;
 			}
-			Assert::IsTrue(exceptionThrown==true);
+			Assert::IsTrue(exceptionThrown==true, L"", LINE_INFO());
 		}
 
 	};

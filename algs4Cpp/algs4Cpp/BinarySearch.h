@@ -9,7 +9,6 @@ namespace algs4Cpp {
 
 	class BinarySearch {
 	public:
-		//BinarySearch() = delete;
 		BinarySearch(const BinarySearch &) = delete;
 		BinarySearch &operator=(const BinarySearch &) = delete;
 		~BinarySearch() = delete;

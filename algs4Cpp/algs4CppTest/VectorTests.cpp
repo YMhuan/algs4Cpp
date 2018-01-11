@@ -30,19 +30,19 @@ namespace algs4CppTest
 			Vector y({ 5.0,2.0,4.0,1.0 });
 
 			Vector z = x + y;
-			Assert::IsTrue(z==Vector({ 6.0,4.0,7.0,5.0 }));
+			Assert::IsTrue(z==Vector({ 6.0,4.0,7.0,5.0 }), L"", LINE_INFO());
 
 			z = x - y;
-			Assert::IsTrue(z == Vector({ -4.0,0.0,-1.0,3.0 }));
+			Assert::IsTrue(z == Vector({ -4.0,0.0,-1.0,3.0 }), L"", LINE_INFO());
 
 			z = x.scale(2);
-			Assert::IsTrue(z == Vector({ 2.0,4.0,6.0,8.0 }));
+			Assert::IsTrue(z == Vector({ 2.0,4.0,6.0,8.0 }), L"", LINE_INFO());
 			
-			Assert::IsTrue(x.dot(y) == (5.0+4.0+12.0+4.0));
+			Assert::IsTrue(x.dot(y) == (5.0+4.0+12.0+4.0), L"", LINE_INFO());
 
-			Assert::IsTrue(x.magnitude() == sqrt(sumOfSquare({ 1.0,2.0,3.0,4.0 })));
-			Assert::IsTrue(x.direction() == x.scale(1 / x.magnitude()));
-			Assert::IsTrue(x.distanceTo(y) == sqrt(sumOfSquare({ -4.0,0.0,-1.0,3.0 })));
+			Assert::IsTrue(x.magnitude() == sqrt(sumOfSquare({ 1.0,2.0,3.0,4.0 })), L"", LINE_INFO());
+			Assert::IsTrue(x.direction() == x.scale(1 / x.magnitude()), L"", LINE_INFO());
+			Assert::IsTrue(x.distanceTo(y) == sqrt(sumOfSquare({ -4.0,0.0,-1.0,3.0 })), L"", LINE_INFO());
 		}
 
 	};

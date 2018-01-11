@@ -19,6 +19,15 @@ namespace algs4Cpp {
 
 	public:
 		Bag() = default;
+		Bag(const Bag &) = delete;
+		Bag &operator=(const Bag &) = delete;
+		~Bag() {
+			while (first) {
+				Node *oldfirst = first;
+				first = oldfirst->next;
+				delete oldfirst;
+			}
+		}
 
 		bool isEmpty() const{
 			return first == nullptr;
@@ -77,5 +86,12 @@ namespace algs4Cpp {
 			return !(*this == that);
 		}
 
+	public:
+		static void mainTest(int argc=0, char *argv[]=nullptr) {
+			Bag<Item> bag;
+			for (int i = 0; i != 5; ++i) {
+				bag.add(Item());
+			}
+		}
 	};
 }
