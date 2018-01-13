@@ -69,6 +69,9 @@
     <ClCompile Include="ResizingArrayBag.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StdRandom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UF.h">
@@ -120,6 +123,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ResizingArrayBag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Quick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdRandom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

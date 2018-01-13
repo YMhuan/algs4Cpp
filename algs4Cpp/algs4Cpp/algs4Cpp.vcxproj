@@ -161,6 +161,7 @@
     <ClCompile Include="ResizingArrayBag.cpp" />
     <ClCompile Include="Shell.cpp" />
     <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="StdRandom.cpp" />
     <ClCompile Include="UF.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="WeightedQuickUnionUF.cpp" />
@@ -175,11 +176,13 @@
     <ClInclude Include="MergeBU.h" />
     <ClInclude Include="MergeX.h" />
     <ClInclude Include="Queue.h" />
+    <ClInclude Include="Quick.h" />
     <ClInclude Include="QuickFindUF.h" />
     <ClInclude Include="QuickUnionUF.h" />
     <ClInclude Include="ResizingArrayBag.h" />
     <ClInclude Include="Shell.h" />
     <ClInclude Include="Stack.h" />
+    <ClInclude Include="StdRandom.h" />
     <ClInclude Include="UF.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="WeightedQuickUnionUF.h" />
