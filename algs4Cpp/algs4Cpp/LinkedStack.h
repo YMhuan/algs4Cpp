@@ -17,7 +17,7 @@ namespace algs4Cpp {
 		};
 
 		Node* first = nullptr;
-		int n = 0;
+		size_t n = 0;
 
 	public:
 		LinkedStack() {
@@ -37,7 +37,7 @@ namespace algs4Cpp {
 			return first == nullptr;
 		}
 
-		int size() const {
+		size_t size() const {
 			return n;
 		}
 
@@ -109,9 +109,6 @@ namespace algs4Cpp {
 
 	private:
 		bool check() {
-			if (n < 0) {
-				return false;
-			}
 			if (n == 0) {
 				if (first != nullptr) return false;
 			}
@@ -124,7 +121,7 @@ namespace algs4Cpp {
 				if (first->next == nullptr) return false;
 			}
 
-			int numberOfNodes = 0;
+			size_t numberOfNodes = 0;
 			for (Node *x = first; (x != nullptr) && (numberOfNodes <= n); x = x->next) {
 				++numberOfNodes;
 			}
@@ -141,7 +138,7 @@ namespace algs4Cpp {
 		static void mainTest(int argc=0, char *argv[]=nullptr) {
 			LinkedStack<Item> stack;
 
-			for (int i = 0; i != 5; ++i) {
+			for (size_t i = 0; i != 5; ++i) {
 				stack.push(Item());
 			}
 

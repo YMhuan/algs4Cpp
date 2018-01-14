@@ -15,7 +15,7 @@ namespace algs4Cpp {
 		};
 
 		Node* first = nullptr;
-		int n = 0;
+		size_t n = 0;
 
 	public:
 		LinkedBag() = default;
@@ -33,7 +33,7 @@ namespace algs4Cpp {
 			return first == nullptr;
 		}
 
-		int size() const {
+		size_t size() const {
 			return n;
 		}
 

@@ -72,8 +72,9 @@ namespace algs4Cpp {
 
 	public:
 
-		static void sort(std::vector<Item>& a, const std::function<bool(const Item &, const Item &)> &less = std::less<>{}) {
+		static void sort(std::vector<Item>& a, const std::function<bool(const Item &, const Item &)> &less = std::less<Item>{}) {
 			std::vector<Item> aux(a);
+			if (a.size() == 0) return;
 			sort(aux, a, 0, a.size() - 1, less);
 			assert(isSorted(a,less));
 		}

@@ -24,15 +24,17 @@ namespace algs4Cpp {
 		static std::uniform_int_distribution<int> iu;
 		static std::uniform_real_distribution<double> du;
 
-		static int minus(int l, int r) {
-			if ((l < 0 && r>0 && l < std::numeric_limits<int>::min()) || (l >= 0 && r < 0 && std::numeric_limits<int>::max() + r < l)) {
+		template<typename T>
+		static T minus(T l, T r) {
+			if ((l < 0 && r>0 && l < std::numeric_limits<T>::min()) || (l >= 0 && r < 0 && std::numeric_limits<T>::max() + r < l)) {
 				throw std::invalid_argument("Range overflow");
 			}
 			return l - r;
 		}
 
-		static int plus(int l, int r) {
-			if ((l > 0 && std::numeric_limits<int>::max() - l < r) || l<0 && std::numeric_limits<int>::min() - l>r) {
+		template<typename T>
+		static T plus(T l, T r) {
+			if ((l > 0 && std::numeric_limits<T>::max() - l < r) || l<0 && std::numeric_limits<T>::min() - l>r) {
 				throw std::invalid_argument("Range overflow");
 			}
 			return l + r;
@@ -40,7 +42,7 @@ namespace algs4Cpp {
 
 	public:
 		static int uniform(int n) {
-			if(n<=0) throw std::invalid_argument("Parameter N must be positive");
+			if(n=0) throw std::invalid_argument("Parameter N must be positive");
 			if (n != upperbound)  {
 				upperbound = n;
 				iu= std::uniform_int_distribution<int>(0,upperbound-1);

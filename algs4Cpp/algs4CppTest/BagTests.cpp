@@ -36,7 +36,7 @@ namespace algs4CppTest
 			bag.add(2);
 			bag.add(3);
 			Assert::IsFalse(bag.isEmpty(), L"", LINE_INFO());
-			Assert::AreEqual(3, bag.size(), L"", LINE_INFO());
+			Assert::IsTrue(bag.size()==3, L"", LINE_INFO());
 			expected.push_back(2);
 			expected.push_back(3);
 			sb.clear();

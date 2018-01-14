@@ -17,7 +17,7 @@ namespace algs4Cpp {
 
 		Node* first = nullptr;
 		Node* last = nullptr;
-		int n = 0;
+		size_t n = 0;
 
 	public:
 		LinkedQueue() = default;
@@ -35,7 +35,7 @@ namespace algs4Cpp {
 			return first == nullptr;
 		}
 
-		int size() const {
+		size_t size() const {
 			return n;
 		}
 
@@ -116,7 +116,7 @@ namespace algs4Cpp {
 			LinkedQueue<Item> LinkedQueue;
 
 
-			for (int i = 0; i != 5; ++i) {
+			for (size_t i = 0; i != 5; ++i) {
 				LinkedQueue.enqueue(Item());
 			}
 

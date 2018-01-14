@@ -17,12 +17,12 @@ namespace algs4CppTest
 		TEST_METHOD(BinarySearchTest1)
 		{
 			vector<int> a{ 2, 4, 6, 8, 10, 12, 14, 16, 18, 22 };
-			Assert::AreEqual(-1, BinarySearch::indexOf(a, 1), L"", LINE_INFO());
-			Assert::AreEqual(-1, BinarySearch::indexOf(a, 20), L"", LINE_INFO());
-			Assert::AreEqual(-1, BinarySearch::indexOf(a, 25), L"", LINE_INFO());
-			Assert::AreEqual(1, BinarySearch::indexOf(a, 4), L"", LINE_INFO());
-			Assert::AreEqual(5, BinarySearch::indexOf(a, 12), L"", LINE_INFO());
-			Assert::AreEqual(9, BinarySearch::indexOf(a, 22), L"", LINE_INFO());
+			Assert::IsTrue(BinarySearch<int>::indexOf(a, 1)==-1, L"", LINE_INFO());
+			Assert::IsTrue(BinarySearch<int>::indexOf(a, 20)==-1, L"", LINE_INFO());
+			Assert::IsTrue(BinarySearch<int>::indexOf(a, 25)==-1, L"", LINE_INFO());
+			Assert::IsTrue(BinarySearch<int>::indexOf(a, 4)==1, L"", LINE_INFO());
+			Assert::IsTrue(BinarySearch<int>::indexOf(a, 12)==5, L"", LINE_INFO());
+			Assert::IsTrue(BinarySearch<int>::indexOf(a, 22)==9, L"", LINE_INFO());
 		}
 
 	};

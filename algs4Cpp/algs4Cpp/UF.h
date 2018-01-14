@@ -5,15 +5,9 @@
 #include<iostream>
 #include<memory>
 
-//#define DllOutput
-#ifdef DllOutput
-	#define DllExport   __declspec( dllexport )  
-#else
-	#define DllExport
-#endif
 
 namespace algs4Cpp {
-	class DllExport UF {
+	class UF {
 	private:
 		std::vector<size_t> parent;
 		std::vector<unsigned char> rank;

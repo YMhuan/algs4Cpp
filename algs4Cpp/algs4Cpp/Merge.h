@@ -65,6 +65,7 @@ namespace algs4Cpp {
 		}
 
 		static void sort(const std::vector<Item>& a, std::vector<size_t>& index, std::vector<size_t>& aux, size_t lo, size_t hi) {
+
 			if (hi <= lo) return;
 			size_t mid = lo + (hi - lo) / 2;
 			sort(a, index, aux, lo, mid);
@@ -74,18 +75,19 @@ namespace algs4Cpp {
 
 	public:
 		static void sort(std::vector<Item>& a) {
+			if (a.size() == 0) return;
 			std::vector<Item> aux(a.size());
-			sort(a, aux, 0, a.size() - 1);
+			sort(a, aux, 0, a.size()-1);  
 			assert(isSorted(a));
 		}
 
 		static std::vector<size_t> indexSort(const std::vector<Item>& a) {
 			std::vector<size_t>::size_type n = a.size();
 			std::vector<size_t> index(n);
-			for (int i = 0; i < n; ++i) {
+			for (size_t i = 0; i < n; ++i) {
 				index[i] = i;
 			}
-
+			if (a.size() == 0) return index;
 			std::vector<size_t> aux(n);
 			sort(a, index, aux, 0, n - 1);
 			return index;
@@ -93,13 +95,13 @@ namespace algs4Cpp {
 
 	public:
 		static void mainTest(int argc = 0, char *argv[] = nullptr) {
-			std::vector<std::string> svec{"a","happy","boy","write","this","demo"};
+			std::vector<std::string> svec;
 			std::vector<std::string> cvec1(svec);
 			std::vector<std::string> cvec2(svec);
 			sort(svec);
 
 
-			std::vector<size_t> index1 =indexSort(cvec2);
+			std::vector<size_t> index1 = indexSort(cvec2);
 		}
 
 	};

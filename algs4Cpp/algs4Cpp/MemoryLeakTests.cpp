@@ -31,6 +31,7 @@ int main(int argc, char *argv[]) {
 	algs4Cpp::ResizingArrayBag<int>::mainTest();
 	algs4Cpp::StdRandom::mainTest();
 	algs4Cpp::Merge<std::string>::mainTest();
+	algs4Cpp::BinarySearch<int>::mainTest();
 
 	return 0;
 }

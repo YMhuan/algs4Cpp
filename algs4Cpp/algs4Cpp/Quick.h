@@ -1,4 +1,5 @@
 #pragma once
+#include"StdRandom.h"
 #include<vector>
 
 namespace algs4Cpp {
@@ -9,7 +10,7 @@ namespace algs4Cpp {
 		~Quick() = delete;
 
 		static void sort(std::vector<Item> a) {
-
+			StdRandom::shuffle(a);
 		}
 	};
 }

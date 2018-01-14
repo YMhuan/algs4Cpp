@@ -21,12 +21,13 @@ namespace algs4CppTest
 
 		TEST_METHOD(MergeTest1)
 		{
-			ifstream input("tiny.txt");
+			ifstream input("tiny2.txt");
 			vector<string> svec;
 			string s;
 			while (input >> s) {
 				svec.push_back(s);
 			}
+
 			vector<string> cvec1(svec);
 			vector<string> cvec2(svec);
 			Merge<string>::sort(svec);

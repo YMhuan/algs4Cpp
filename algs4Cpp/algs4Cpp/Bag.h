@@ -15,7 +15,7 @@ namespace algs4Cpp {
 		};
 
 		Node* first=nullptr;
-		int n=0;
+		size_t n=0;
 
 	public:
 		Bag() = default;
@@ -33,7 +33,7 @@ namespace algs4Cpp {
 			return first == nullptr;
 		}
 
-		int size() const{
+		size_t size() const{
 			return n;
 		}
 
@@ -89,7 +89,7 @@ namespace algs4Cpp {
 	public:
 		static void mainTest(int argc=0, char *argv[]=nullptr) {
 			Bag<Item> bag;
-			for (int i = 0; i != 5; ++i) {
+			for (size_t i = 0; i != 5; ++i) {
 				bag.add(Item());
 			}
 		}

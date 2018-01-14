@@ -12,18 +12,6 @@
   MergeBU.cpp
   Merge.cpp
   MemoryLeakTests.cpp
-g:\ksc\algorithmsc++\algs4cpp\algs4cpp\merge.h(85): warning C4018: '<': signed/unsigned mismatch
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\merge.h(82): note: while compiling class template member function 'std::vector<std::size_t,std::allocator<std::_Ty>> algs4Cpp::Merge<std::string>::indexSort(const std::vector<std::string,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>> &)'
-          with
-          [
-              _Ty=std::size_t
-          ]
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\merge.h(102): note: see reference to function template instantiation 'std::vector<std::size_t,std::allocator<std::_Ty>> algs4Cpp::Merge<std::string>::indexSort(const std::vector<std::string,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>> &)' being compiled
-          with
-          [
-              _Ty=std::size_t
-          ]
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\memoryleaktests.cpp(33): note: see reference to class template instantiation 'algs4Cpp::Merge<std::string>' being compiled
   LinkedStack.cpp
   LinkedQueue.cpp
   LinkedBag.cpp

@@ -17,7 +17,7 @@ namespace algs4Cpp {
 
 		Node* first = nullptr;
 		Node* last = nullptr;
-		int n = 0;
+		size_t n = 0;
 
 	public:
 		Queue() = default;
@@ -35,7 +35,7 @@ namespace algs4Cpp {
 			return first == nullptr;
 		}
 
-		int size() const {
+		size_t size() const {
 			return n;
 		}
 
