@@ -1,37 +1,28 @@
-﻿  ShellTests.cpp
-g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(30): warning C4018: '<': signed/unsigned mismatch
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(28): note: while compiling class template member function 'void algs4Cpp::Shell<std::string>::hSort(std::vector<std::string,std::allocator<_Ty>> &,int)'
+﻿  stdafx.cpp
+  VectorTests.cpp
+  UF_Tests.cpp
+  unittest1.cpp
+  ShellTests.cpp
+  QueueTests.cpp
+  MergeXTests.cpp
+  MergeTests.cpp
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\merge.h(85): warning C4018: '<': signed/unsigned mismatch
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\merge.h(82): note: while compiling class template member function 'std::vector<std::size_t,std::allocator<std::_Ty>> algs4Cpp::Merge<std::string>::indexSort(const std::vector<std::string,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>> &)'
           with
           [
-              _Ty=std::string
+              _Ty=std::size_t
           ]
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(46): note: see reference to function template instantiation 'void algs4Cpp::Shell<std::string>::hSort(std::vector<std::string,std::allocator<_Ty>> &,int)' being compiled
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\mergetests.cpp(37): note: see reference to function template instantiation 'std::vector<std::size_t,std::allocator<std::_Ty>> algs4Cpp::Merge<std::string>::indexSort(const std::vector<std::string,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>> &)' being compiled
           with
           [
-              _Ty=std::string
+              _Ty=std::size_t
           ]
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\shelltests.cpp(30): note: see reference to class template instantiation 'algs4Cpp::Shell<std::string>' being compiled
-g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(15): warning C4018: '<': signed/unsigned mismatch
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(14): note: while compiling class template member function 'bool algs4Cpp::Shell<std::string>::isSorted(std::vector<std::string,std::allocator<_Ty>> &)'
-          with
-          [
-              _Ty=std::string
-          ]
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(49): note: see reference to function template instantiation 'bool algs4Cpp::Shell<std::string>::isSorted(std::vector<std::string,std::allocator<_Ty>> &)' being compiled
-          with
-          [
-              _Ty=std::string
-          ]
-g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(22): warning C4018: '<': signed/unsigned mismatch
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(21): note: while compiling class template member function 'bool algs4Cpp::Shell<std::string>::isHsorted(std::vector<std::string,std::allocator<_Ty>> &,int)'
-          with
-          [
-              _Ty=std::string
-          ]
-  g:\ksc\algorithmsc++\algs4cpp\algs4cpp\shell.h(35): note: see reference to function template instantiation 'bool algs4Cpp::Shell<std::string>::isHsorted(std::vector<std::string,std::allocator<_Ty>> &,int)' being compiled
-          with
-          [
-              _Ty=std::string
-          ]
+  g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\mergetests.cpp(32): note: see reference to class template instantiation 'algs4Cpp::Merge<std::string>' being compiled
+  MergeBUTests.cpp
+  LinkedStackTests.cpp
+  BinarySearchTests.cpp
+  BagTests.cpp
+  Generating Code...
+     Creating library G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.lib and object G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.exp
   algs4CppTest.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.dll
   algs4CppTest.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.pdb (Partial PDB)

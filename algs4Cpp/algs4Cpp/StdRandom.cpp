@@ -1,20 +1,8 @@
 #include"StdRandom.h"
+using namespace algs4Cpp;
 
-#include <iostream>
-#include <random>
-#include<string>
-
-//unsigned random_gen(unsigned seed, unsigned min, unsigned max)
-//{
-//	static std::default_random_engine e(seed);
-//	static std::uniform_int_distribution<unsigned> ud(min, max);
-//	return ud(e);
-//}
-//
-//int main()
-//{
-//	std::cout << random_gen(0, 1, 10) << std::endl;
-//	std::cout << random_gen(0, 11, 20) << std::endl;
-//	return 0;
-//}
-
+time_t StdRandom::seed = std::time(nullptr);
+std::default_random_engine StdRandom::random(static_cast<unsigned int>(seed));
+int StdRandom::upperbound = 1;
+std::uniform_int_distribution<int> StdRandom::iu(0, upperbound);
+std::uniform_real_distribution<double> StdRandom::du(0, 1);

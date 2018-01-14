@@ -6,6 +6,7 @@ g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\vc140.idb
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\stdafx.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\bagtests.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\binarysearchtests.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\linkedstacktests.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\mergebutests.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\mergetests.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\mergextests.obj
@@ -14,11 +15,9 @@ g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\shelltests.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\unittest1.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\uf_tests.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\vectortests.obj
-g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\linkedstacktests.obj
 g:\ksc\algorithmsc++\algs4cpp\debug\algs4cpptest.ilk
 g:\ksc\algorithmsc++\algs4cpp\debug\algs4cpptest.dll
 g:\ksc\algorithmsc++\algs4cpp\debug\algs4cpptest.pdb
-g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\algs4cpptest.vcxprojresolveassemblyreference.cache
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\algs4cpptest.tlog\algs4cpptest.write.1u.tlog
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\algs4cpptest.tlog\cl.command.1.tlog
 g:\ksc\algorithmsc++\algs4cpp\algs4cpptest\debug\algs4cpptest.tlog\cl.read.1.tlog

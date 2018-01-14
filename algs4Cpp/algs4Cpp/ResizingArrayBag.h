@@ -8,9 +8,9 @@ namespace algs4Cpp {
 	private:
 		std::allocator<Item> alloc;
 		Item *a = alloc.allocate(2);
-		int nmemory = 2;
+		size_t nmemory = 2;
 		Item *b = a;
-		int n=0;
+		size_t n=0;
 
 	public:
 		ResizingArrayBag() = default;
@@ -31,7 +31,7 @@ namespace algs4Cpp {
 		}
 
 
-		void resize(int capacity) {
+		void resize(size_t capacity) {
 			assert(capacity >= n);
 			Item * const temp = alloc.allocate(capacity);
 			std::uninitialized_copy_n(a, n, temp);
@@ -81,7 +81,7 @@ namespace algs4Cpp {
 	public:
 		static void mainTest(int argc = 0, char *argv[] = nullptr) {
 			ResizingArrayBag<Item> bag;
-			for (int i = 0; i != 5; ++i) {
+			for (size_t i = 0; i != 5; ++i) {
 				bag.add(Item());
 			}
 		}

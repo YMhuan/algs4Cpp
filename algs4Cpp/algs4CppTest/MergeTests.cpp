@@ -34,13 +34,13 @@ namespace algs4CppTest
 			Assert::IsTrue(svec == cvec1, L"", LINE_INFO());
 
 
-			vector<int> index1 = Merge<string>::indexSort(cvec2);
-			vector<int> index2;
+			vector<size_t> index1 = Merge<string>::indexSort(cvec2);
+			vector<size_t> index2;
 			index2.reserve(cvec2.size());
-			for (int i = 0; i != cvec2.size(); ++i) {
+			for (size_t i = 0; i != cvec2.size(); ++i) {
 				index2.push_back(i);
 			}
-			std::stable_sort(index2.begin(), index2.end(), [&cvec2](int a, int b) {return cvec2[a] < cvec2[b]; });
+			std::stable_sort(index2.begin(), index2.end(), [&cvec2](size_t a, size_t b) {return cvec2[a] < cvec2[b]; });
 			Assert::IsTrue(index1 == index2, L"", LINE_INFO());
 		}
 
