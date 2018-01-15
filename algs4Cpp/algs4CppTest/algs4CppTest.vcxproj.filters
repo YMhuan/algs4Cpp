@@ -68,6 +68,9 @@
     <ClCompile Include="StdRandomTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QuickXTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="algs4CppTest.rc">

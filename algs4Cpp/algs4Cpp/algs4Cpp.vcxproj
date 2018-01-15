@@ -159,6 +159,7 @@
     <ClCompile Include="Quick.cpp" />
     <ClCompile Include="QuickFindUF.cpp" />
     <ClCompile Include="QuickUnionUF.cpp" />
+    <ClCompile Include="QuickX.cpp" />
     <ClCompile Include="ResizingArrayBag.cpp" />
     <ClCompile Include="Shell.cpp" />
     <ClCompile Include="Stack.cpp" />
@@ -178,8 +179,10 @@
     <ClInclude Include="MergeX.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="Quick.h" />
+    <ClInclude Include="Quick3way.h" />
     <ClInclude Include="QuickFindUF.h" />
     <ClInclude Include="QuickUnionUF.h" />
+    <ClInclude Include="QuickX.h" />
     <ClInclude Include="ResizingArrayBag.h" />
     <ClInclude Include="Shell.h" />
     <ClInclude Include="Stack.h" />

@@ -75,6 +75,9 @@
     <ClCompile Include="Quick.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QuickX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UF.h">
@@ -132,6 +135,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StdRandom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Quick3way.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

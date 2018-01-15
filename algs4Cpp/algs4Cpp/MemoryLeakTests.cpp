@@ -12,6 +12,7 @@
 #include"Quick.h"
 #include"QuickFindUF.h"
 #include"QuickUnionUF.h"
+#include"QuickX.h"
 #include"ResizingArrayBag.h"
 #include"Shell.h"
 #include"Stack.h"
@@ -34,6 +35,7 @@ int main(int argc, char *argv[]) {
 	Merge<int>::mainTest();
 	BinarySearch<int>::mainTest();
 	Quick<int>::mainTest();
+	QuickX<int>::mainTest();
 
 	return 0;
 }
