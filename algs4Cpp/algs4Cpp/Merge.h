@@ -98,10 +98,10 @@ namespace algs4Cpp {
 			std::vector<std::string> svec;
 			std::vector<std::string> cvec1(svec);
 			std::vector<std::string> cvec2(svec);
-			sort(svec);
+			Merge<std::string>::sort(svec);
 
 
-			std::vector<size_t> index1 = indexSort(cvec2);
+			std::vector<size_t> index1 = Merge<std::string>::indexSort(cvec2);
 		}
 
 	};

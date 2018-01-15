@@ -42,11 +42,11 @@ namespace algs4Cpp {
 
 	public:
 		static int uniform(int n) {
-			if(n=0) throw std::invalid_argument("Parameter N must be positive");
+			if(n<=0) throw std::invalid_argument("Parameter N must be positive");
 			if (n != upperbound)  {
 				upperbound = n;
 				iu= std::uniform_int_distribution<int>(0,upperbound-1);
-			}
+			}		
 			return iu(random);
 		}
 
@@ -176,8 +176,8 @@ namespace algs4Cpp {
 		template<typename Item> 
 		static void shuffle(std::vector<Item> &a) {
 			std::vector<Item>::size_type n = a.size();
-			for (std::vector<Item>::size_type i = 0; i < n; ++i) {
-				int r = i + uniform(n - i);
+			for (size_t i = 0; i < n; ++i) {
+				size_t r = i + uniform(n - i);
 				Item temp= a[i];
 				a[i] = a[r];
 				a[r] = temp;

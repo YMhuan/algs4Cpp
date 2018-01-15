@@ -1,8 +1,7 @@
 #pragma once
 #include<vector>
-#include<fstream>
 #include<algorithm>
-#include<iostream>
+#include<cassert>
 
 namespace algs4Cpp {
 
@@ -30,19 +29,12 @@ namespace algs4Cpp {
 		}
 
 		static void mainTest(int argc=0, char *argv[]=nullptr) {
-			std::ifstream input(argv[1]);
-			std::vector<int> whitelist;
-			int x;
-			while(input>>x){
-				whitelist.push_back(x);
-			}
+			std::vector<int> whitelist{1,3,5,7,9};
 			std::sort(whitelist.begin(), whitelist.end());
 			
-			int key;
-			while (std::cin >> key) {
-				if (BinarySearch<int>::indexOf(whitelist, key) == -1)
-					std::cout << key << std::endl;
-			}
+			int key=6;
+			assert(BinarySearch<int>::indexOf(whitelist, key) == -1);
+
 		}
 	};
 

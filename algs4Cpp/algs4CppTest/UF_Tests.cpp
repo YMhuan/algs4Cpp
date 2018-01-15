@@ -59,19 +59,11 @@ namespace algs4CppTest
 			Assert::IsTrue(uf.siteCount()==3, L"", LINE_INFO());
 
 
-			bool exceptionThrown = false;
-			try
-			{
-				auto funcPtr = [&]() {
-					set2[0] = make_pair(7, 8);
-					uf = unionSite(set2, 8);
-				};
-				Assert::ExpectException<std::invalid_argument>(funcPtr, L"", LINE_INFO());
-			}
-			catch(exception e){
-				exceptionThrown = true;
-			}
-			Assert::IsTrue(exceptionThrown==true, L"", LINE_INFO());
+			auto funcPtr = [&]() {
+				set2[0] = make_pair(7, 8);
+				uf = unionSite(set2, 8);
+			};
+			Assert::ExpectException<std::out_of_range>(funcPtr, L"", LINE_INFO());
 		}
 
 	};

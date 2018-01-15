@@ -25,6 +25,13 @@ namespace algs4Cpp {
 			}
 		}
 
+		static bool isSorted(std::vector<Item> &a) {
+			for (size_t i = 1; i < a.size(); ++i) {
+				if (a[i] < a[i - 1]) return false;
+			}
+			return true;
+		}
+
 	public:
 		static void sort(std::vector<Item> &a) {
 			std::vector<Item>::size_type n = a.size();
@@ -37,13 +44,6 @@ namespace algs4Cpp {
 				 }
 			}
 			assert(isSorted(a));
-		}
-
-		static bool isSorted(std::vector<Item> &a) {
-			for (size_t i = 1; i < a.size(); ++i) {
-				if (a[i] < a[i - 1]) return false;
-			}
-			return true;
 		}
 
 	};

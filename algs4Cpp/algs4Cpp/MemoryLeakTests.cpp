@@ -22,16 +22,18 @@
 
 #include<vld.h>
 
+using namespace algs4Cpp;
 
 
 int main(int argc, char *argv[]) {
-	algs4Cpp::Bag<int>::mainTest();
-	algs4Cpp::Queue<int>::mainTest();
-	algs4Cpp::LinkedStack<int>::mainTest();
-	algs4Cpp::ResizingArrayBag<int>::mainTest();
-	algs4Cpp::StdRandom::mainTest();
-	algs4Cpp::Merge<std::string>::mainTest();
-	algs4Cpp::BinarySearch<int>::mainTest();
+	Bag<int>::mainTest();
+	Queue<int>::mainTest();
+	LinkedStack<int>::mainTest();
+	ResizingArrayBag<int>::mainTest();
+	StdRandom::mainTest();
+	Merge<int>::mainTest();
+	BinarySearch<int>::mainTest();
+	Quick<int>::mainTest();
 
 	return 0;
 }

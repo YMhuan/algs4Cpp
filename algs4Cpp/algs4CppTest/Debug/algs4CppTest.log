@@ -1,16 +1,3 @@
-﻿  stdafx.cpp
-  VectorTests.cpp
-  UF_Tests.cpp
-  unittest1.cpp
-  ShellTests.cpp
-  QueueTests.cpp
-  MergeXTests.cpp
-  MergeTests.cpp
-  MergeBUTests.cpp
-  LinkedStackTests.cpp
-  BinarySearchTests.cpp
-  BagTests.cpp
-  Generating Code...
-     Creating library G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.lib and object G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.exp
+﻿  QuickTests.cpp
   algs4CppTest.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.dll
   algs4CppTest.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4CppTest.pdb (Partial PDB)

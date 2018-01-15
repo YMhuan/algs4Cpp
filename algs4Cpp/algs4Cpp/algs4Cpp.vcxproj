@@ -26,7 +26,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -156,6 +156,7 @@
     <ClCompile Include="MergeBU.cpp" />
     <ClCompile Include="MergeX.cpp" />
     <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Quick.cpp" />
     <ClCompile Include="QuickFindUF.cpp" />
     <ClCompile Include="QuickUnionUF.cpp" />
     <ClCompile Include="ResizingArrayBag.cpp" />
