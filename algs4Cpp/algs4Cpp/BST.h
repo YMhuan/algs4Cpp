@@ -5,7 +5,7 @@
 #include<string>
 #include<algorithm>
 #include<iostream>
-
+#include<string>
 
 namespace algs4Cpp {
 	template<typename Key, typename Value> class BST {
@@ -278,15 +278,47 @@ namespace algs4Cpp {
 		}
 
 	private:
-		bool check() {
+		bool check() const {
 			if (!isBST()) std::cout << "Not in symmetric order" << std::endl;
 			if (!isSizeConsistent()) std::cout << "Subtree counts not consistent" << std::endl;
 			if (!isRankConsistent()) std::cout << "Ranks not consistent" << std::endl;
 			return isBST() & isSizeConsistent() & isRankConsistent();
 		}
 
-		bool isBST() {
-			return isBST(root,nullptr,nullptr)
+		bool isBST() const {
+			return isBST(root,nullptr, nullptr);
+		}
+
+		bool isBST(Node *x, const Key *minP, const Key *maxP) const {
+			if (!x) return true;
+			if (minP && (compare(x->key, *minP) <= 0)) return false;
+			if (maxP && (compare(x->key, *maxP) >= 0)) return false;
+			return isBST(x->left, minP, &(x->key)) && isBST(x->right, &(x->key), maxP);
+		}
+
+		bool isSizeConsistent() const {
+			return isSizeConsistent(root);
+		}
+
+		bool isSizeConsistent(Node *x) const {
+			if (!x) return true;
+			if (x->size != size(x.left) + size(x.right) + 1) return false;
+			return isSizeConsistent(x->left) && isSizeConsistent(x->right);
+		}
+
+		bool isRankConsistent() const {
+			for (size_t i = 0; i < size(); ++i) 
+				if (i != rank(select(i))) return false;
+			for (const Key &key : keys()) 
+				if (compare(key, select(rank(key))) != 0) return false;
+			return true;
+			
+		}
+
+	public:
+		static void mainTest(int argc = 0, char *argv[] = nullptr) {
+			BST<std::string, int> st;
+			//±ðÍü¼ÇÐ´Îö¹¹£¡
 		}
 
 	};

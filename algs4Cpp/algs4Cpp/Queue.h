@@ -21,7 +21,11 @@ namespace algs4Cpp {
 
 	public:
 		Queue() = default;
-		Queue(const Queue &) = delete;
+		Queue(const Queue & rhs) {
+			for (const Node *p = rhs.first; p != nullptr; p = p->next) {
+				enqueue(p->item);
+			}
+		}
 		Queue &operator=(const Queue &) = delete;
 		~Queue() {
 			while (first) {
@@ -121,6 +125,8 @@ namespace algs4Cpp {
 			}
 
 			Item x = queue.dequeue();
+			Queue<Item> queue2(queue);
+
 		}
 	};
 }
