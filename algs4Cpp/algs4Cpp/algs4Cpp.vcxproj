@@ -26,7 +26,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Average.cpp" />
     <ClCompile Include="Bag.cpp" />
     <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="LinkedBag.cpp" />
@@ -157,6 +158,7 @@
     <ClCompile Include="MergeX.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Quick.cpp" />
+    <ClCompile Include="Quick3way.cpp" />
     <ClCompile Include="QuickFindUF.cpp" />
     <ClCompile Include="QuickUnionUF.cpp" />
     <ClCompile Include="QuickX.cpp" />
@@ -164,13 +166,17 @@
     <ClCompile Include="Shell.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="StdRandom.cpp" />
+    <ClCompile Include="Stopwatch.cpp" />
+    <ClCompile Include="StopwatchWin32.cpp" />
     <ClCompile Include="UF.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="WeightedQuickUnionUF.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Average.h" />
     <ClInclude Include="Bag.h" />
     <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="BST.h" />
     <ClInclude Include="LinkedBag.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="LinkedStack.h" />
@@ -187,6 +193,8 @@
     <ClInclude Include="Shell.h" />
     <ClInclude Include="Stack.h" />
     <ClInclude Include="StdRandom.h" />
+    <ClInclude Include="Stopwatch.h" />
+    <ClInclude Include="StopwatchWin32.h" />
     <ClInclude Include="UF.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="WeightedQuickUnionUF.h" />

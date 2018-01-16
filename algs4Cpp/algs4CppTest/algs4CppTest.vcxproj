@@ -164,6 +164,7 @@
     <ClCompile Include="MergeTests.cpp" />
     <ClCompile Include="MergeXTests.cpp" />
     <ClCompile Include="QueueTests.cpp" />
+    <ClCompile Include="Quick3wayTests.cpp" />
     <ClCompile Include="QuickTests.cpp" />
     <ClCompile Include="QuickXTests.cpp" />
     <ClCompile Include="ShellTests.cpp" />

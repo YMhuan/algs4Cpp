@@ -1,31 +1,7 @@
-﻿  WeightedQuickUnionUF.cpp
-  Vector.cpp
-  UF.cpp
-  StdRandom.cpp
-  Stack.cpp
-  Shell.cpp
-  ResizingArrayBag.cpp
-  QuickX.cpp
-  QuickUnionUF.cpp
-  QuickFindUF.cpp
-  Quick.cpp
-  Queue.cpp
-  MergeX.cpp
-  MergeBU.cpp
-  Merge.cpp
-  MemoryLeakTests.cpp
-  LinkedStack.cpp
-  LinkedQueue.cpp
-  LinkedBag.cpp
-  BinarySearch.cpp
+﻿  Average.cpp
   Generating Code...
   Compiling...
-  Bag.cpp
+  MemoryLeakTests.cpp
   Generating Code...
-Vector.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
-UF.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
-QuickUnionUF.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
-QuickFindUF.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
-Quick.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
-Merge.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
-  algs4Cpp.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4Cpp.lib
+  algs4Cpp.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4Cpp.exe
+  algs4Cpp.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4Cpp.pdb (Full PDB)

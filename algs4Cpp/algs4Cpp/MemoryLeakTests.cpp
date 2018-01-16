@@ -1,5 +1,6 @@
 #pragma warning (disable : 4996)
 
+#include"Average.h"
 #include"Bag.h"
 #include"BinarySearch.h"
 #include"LinkedBag.h"
@@ -10,6 +11,7 @@
 #include"MergeX.h"
 #include"Queue.h"
 #include"Quick.h"
+#include"Quick3way.h"
 #include"QuickFindUF.h"
 #include"QuickUnionUF.h"
 #include"QuickX.h"
@@ -17,6 +19,8 @@
 #include"Shell.h"
 #include"Stack.h"
 #include"StdRandom.h"
+#include"Stopwatch.h"
+#include"StopwatchWin32.h"
 #include"UF.h"
 #include"Vector.h"
 #include"WeightedQuickUnionUF.h"
@@ -27,6 +31,7 @@ using namespace algs4Cpp;
 
 
 int main(int argc, char *argv[]) {
+	Average::mainTest();
 	Bag<int>::mainTest();
 	Queue<int>::mainTest();
 	LinkedStack<int>::mainTest();
@@ -36,6 +41,10 @@ int main(int argc, char *argv[]) {
 	BinarySearch<int>::mainTest();
 	Quick<int>::mainTest();
 	QuickX<int>::mainTest();
+	Quick3way<int>::mainTest();
+	Stopwatch::mainTest();
+	StopwatchWin32::mainTest();
+
 
 	return 0;
 }
