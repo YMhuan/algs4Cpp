@@ -3,6 +3,7 @@
 #include"Average.h"
 #include"Bag.h"
 #include"BinarySearch.h"
+#include"BST.h"
 #include"LinkedBag.h"
 #include"LinkedQueue.h"
 #include"LinkedStack.h"
@@ -44,7 +45,7 @@ int main(int argc, char *argv[]) {
 	Quick3way<int>::mainTest();
 	Stopwatch::mainTest();
 	StopwatchWin32::mainTest();
-
+	BST<int, int>::mainTest();
 
 	return 0;
 }

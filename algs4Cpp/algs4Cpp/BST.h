@@ -6,6 +6,8 @@
 #include<algorithm>
 #include<iostream>
 #include<string>
+#include<vector>
+#include<iostream>
 
 namespace algs4Cpp {
 	template<typename Key, typename Value> class BST {
@@ -13,7 +15,10 @@ namespace algs4Cpp {
 		BST() = default;
 		BST(const BST &) = delete;
 		BST &operator=(const BST &) = delete;
-		~BST() = default;
+		~BST() {
+			delete root;
+			root = nullptr;
+		}
 
 		class Node {
 		public:
@@ -26,11 +31,16 @@ namespace algs4Cpp {
 			Node(const Key &_key, const Value &_val, size_t _size) :key(_key),val(_val),size(_size){}
 			Node(const Node &) = delete;
 			Node &operator=(const Node &) = delete;
-			~Node() = default;
+			~Node() {
+				delete left;
+				left = nullptr;
+				delete right;
+				right = nullptr;
+			}
 		};
 
 	private:
-		Node *root;
+		Node *root = nullptr;
 
 		int compare(const Key &lhs, const Key &rhs) const {
 			if (lhs == rhs) return 0;
@@ -39,12 +49,12 @@ namespace algs4Cpp {
 		}
 
 
-		size_t size(const Node *x) const {
+		size_t size(Node *x) const {
 			if (!x) return 0;
 			else return x->size;
 		}
 
-		Node *get(const Node *x, const Key &key) const {
+		Node *get(Node *x, const Key &key) const {
 			if (!x) return nullptr;
 			if (key < (x->key)) return get(x->left, key);
 			else if(key>(x->key)) return get(x->right, key);
@@ -63,7 +73,9 @@ namespace algs4Cpp {
 		Node *deleteMin(Node *x) {
 			if (!(x->left)) {
 				Node *ret = x->right;
+				x->right = nullptr;
 				delete x;
+				x = nullptr;
 				return ret;
 			}
 
@@ -75,7 +87,9 @@ namespace algs4Cpp {
 		Node *deleteMax(Node *x) {
 			if (!(x->right)) {
 				Node *ret = x->left;
+				x->left = nullptr;
 				delete x;
+				x = nullptr;
 				return ret;
 			}
 			x->right = deleteMax(x->right);
@@ -86,40 +100,50 @@ namespace algs4Cpp {
 		Node *erase(Node *x, const Key &key) {
 			if (!x) return nullptr;
 
-			if (key < x->key) x->left = delete(x->left, key);
-			else if (key > x->key) x->right = delete(x->right, key);
+			int cmp = compare(key, x->key);
+			if (cmp<0) x->left = erase(x->left, key);
+			else if (cmp>0) x->right = erase(x->right, key);
 			else {
 				if (!(x->right)) {
 					Node *ret = x->left;
+					x->left = nullptr;
 					delete x;
+					x = nullptr;
 					return ret;
 				}
 				if (!(x->left)) {
 					Node *ret = x->right;
+					x->right = nullptr;
 					delete x;
+					x = nullptr;
 					return ret;
 				}
 				Node *t = x;
 				x = min(t->right);
+				x = new Node(x->key, x->val, x->size);
+				
 				x->right = deleteMin(t->right);
 				x->left = t->left;
+				t->left = nullptr;
+				t->right = nullptr;
 				delete t;
+				t = nullptr;
 			}
-			x->size = size(x.left) + size(x.right) + 1;
+			x->size = size(x->left) + size(x->right) + 1;
 			return x;
 		}
 
-		Node *min(const Node *x) const {
+		 Node *min(Node *x) const {
 			if (!(x->left)) return x;
 			else return min(x->left);
 		}
 
-		Node *max(const Node *x) const {
+		 Node *max(Node *x) const {
 			if (!(x->right)) return x;
 			else return max(x->right);
 		}
 
-		Node *floor(const Node *x, const Key &key) const {
+		 Node *floor(Node *x, const Key &key) const {
 			if (!x) return nullptr;
 			if (key == x->key) return x;
 			if (key < x->key) return floor(x->left, key);
@@ -128,7 +152,7 @@ namespace algs4Cpp {
 			else return x;
 		}
 
-		Node *ceiling(const Node *x, const Key &key) const {
+		Node *ceiling(Node *x, const Key &key) const {
 			if (!x) return nullptr;
 			if (key == x->key) return x;
 			if (key < x->key) {
@@ -139,7 +163,7 @@ namespace algs4Cpp {
 			return ceiling(x->right, key);
 		}
 
-		Node *select(const Node *x, size_t k) const {
+		 Node *select(Node *x, size_t k) const {
 			if (!x) return nullptr;
 			size_t t= size(x->left);
 			if (t > k) return select(x->left, k);
@@ -147,14 +171,15 @@ namespace algs4Cpp {
 			else return x;
 		}
 
-		size_t rank(const Node *x, const Key &key) const {
+		size_t rank(Node *x, const Key &key) const {
 			if (!x) return 0;
-			if (key < x->key) return rank(x->left, key);
-			else if (key->x->key) return 1 + size(x->left) + rank(x->right, key);
+			int cmp = compare(key, x->key);
+			if (cmp<0) return rank(x->left, key);
+			else if (cmp>0) return 1 + size(x->left) + rank(x->right, key);
 			else return size(x->left);
 		}
 
-		void keys(const Node *x, algs4Cpp::Queue<Key> &queue, const Key &lo, const Key &hi) const {
+		void keys(Node *x, algs4Cpp::Queue<Key> &queue, const Key &lo, const Key &hi) const {
 			if (!x) return;
 			int cmplo = compare(lo, x->key);
 			int cmphi = compare(hi, x->key);
@@ -163,14 +188,14 @@ namespace algs4Cpp {
 			if (cmphi >= 0) keys(x->right, queue, lo, hi);
 		}
 
-		int height(const Node *x) const {
+		int height(Node *x) const {
 			if (!x) return -1;
 			return 1 + std::max(height(x->left), height(x->right));
 		}
 
 	public:
 		bool isEmpty() const {
-			return size == 0;
+			return size() == 0;
 		}
 
 		size_t size() const {
@@ -182,8 +207,10 @@ namespace algs4Cpp {
 			return get(key) != nullptr;
 		}
 
-		const Value *get(const Key &key) const {
-			return &(get(root, key)->val);
+		Value *get(const Key &key) const {
+			Node *p = get(root, key);
+			if (!p) return nullptr;
+			else return &(get(root, key)->val);
 		}
 
 		void put(const Key &key, const Value &val) {
@@ -211,31 +238,31 @@ namespace algs4Cpp {
 			assert(check());
 		}
 
-		const Key *min() const {
+		Key *min() const {
 			if(isEmpty()) throw std::underflow_error("calls min() with empty symbol table");
 			return &(min(root)->key);
 		}
 
-		const Key *max() const {
-			if(isEmpty()) throw throw std::underflow_error("calls max() with empty symbol table");
+	    Key *max() const {
+			if(isEmpty()) throw std::underflow_error("calls max() with empty symbol table");
 			return &(max(root)->key);
 		}
 
-		const Key *floor(const Key &key) const {
+		Key *floor(const Key &key) const {
 			if (isEmpty()) throw std::underflow_error("calls floor() with empty symbol table");
 			Node *x = floor(root, key);
 			if (!x) return nullptr;
 			else return &(x->key);
 		}
 
-		const Key *ceiling(const Key &key) const {
+	    Key *ceiling(const Key &key) const {
 			if (isEmpty()) throw std::underflow_error("calls ceiling() with empty symbol table");
 			Node *x = ceiling(root, key);
 			if (!x) return nullptr;
 			else return &(x->key);
 		}
 
-		const Key *select(size_t k) const {
+	    Key *select(size_t k) const {
 			if (k >= size())
 				throw std::invalid_argument("argument to select() is invalid: " + std::to_string(k));
 			Node *x = select(root, k);
@@ -244,6 +271,11 @@ namespace algs4Cpp {
 
 		size_t rank(const Key & key) const {
 			return rank(root, key);
+		}
+
+		algs4Cpp::Queue<Key> keys() const {
+			if (isEmpty()) return algs4Cpp::Queue<Key>();
+			return keys(*min(), *max());
 		}
 
 		algs4Cpp::Queue<Key> keys(const Key &lo, const Key &hi) const {
@@ -302,15 +334,15 @@ namespace algs4Cpp {
 
 		bool isSizeConsistent(Node *x) const {
 			if (!x) return true;
-			if (x->size != size(x.left) + size(x.right) + 1) return false;
+			if (x->size != size(x->left) + size(x->right) + 1) return false;
 			return isSizeConsistent(x->left) && isSizeConsistent(x->right);
 		}
 
 		bool isRankConsistent() const {
 			for (size_t i = 0; i < size(); ++i) 
-				if (i != rank(select(i))) return false;
+				if (i != rank(*select(i))) return false;
 			for (const Key &key : keys()) 
-				if (compare(key, select(rank(key))) != 0) return false;
+				if (compare(key, *select(rank(key))) != 0) return false;
 			return true;
 			
 		}
@@ -318,7 +350,35 @@ namespace algs4Cpp {
 	public:
 		static void mainTest(int argc = 0, char *argv[] = nullptr) {
 			BST<std::string, int> st;
-			//±ðÍü¼ÇÐ´Îö¹¹£¡
+			std::vector<std::string> vec{ "c","e","a","f","b","d","h","g" };
+			for (size_t i = 0; i != vec.size(); ++i) {
+				std::string key = vec[i];
+				st.put(key, i);
+			}
+
+			assert(st.contains("e"));
+
+			for (const auto &s : st.levelOrder())
+				std::cout << s << " " << *st.get(s) << std::endl;
+			std::cout << std::endl;
+
+			for (const auto &s : st.keys())
+				std::cout << s << " " << *st.get(s) << std::endl;
+			std::cout << std::endl;
+
+			st.deleteMax();
+			st.deleteMin();
+			st.erase("e");
+			assert(!st.contains("e"));
+
+			for (const auto &s : st.levelOrder())
+				std::cout << s << " " << *st.get(s) << std::endl;
+			std::cout << std::endl;
+
+			for (const auto &s : st.keys())
+				std::cout << s << " " << *st.get(s) << std::endl;
+			std::cout << std::endl;
+
 		}
 
 	};
