@@ -4,6 +4,8 @@
 #include"Bag.h"
 #include"BinarySearch.h"
 #include"BST.h"
+#include"Count.h"
+#include"Counter.h"
 #include"LinkedBag.h"
 #include"LinkedQueue.h"
 #include"LinkedStack.h"
@@ -22,6 +24,8 @@
 #include"StdRandom.h"
 #include"Stopwatch.h"
 #include"StopwatchWin32.h"
+#include"ThreeSum.h"
+#include"ThreeSumFast.h"
 #include"UF.h"
 #include"Vector.h"
 #include"WeightedQuickUnionUF.h"
@@ -46,6 +50,9 @@ int main(int argc, char *argv[]) {
 	Stopwatch::mainTest();
 	StopwatchWin32::mainTest();
 	BST<int, int>::mainTest();
-
+	Count::mainTest();
+	Counter::mainTest();
+	ThreeSum::mainTest();  //take about 70 seconds, no patience to wait
+	//ThreeSumFast::mainTest();
 	return 0;
 }

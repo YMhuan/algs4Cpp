@@ -26,7 +26,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -150,6 +150,8 @@
     <ClCompile Include="Bag.cpp" />
     <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="BST.cpp" />
+    <ClCompile Include="Count.cpp" />
+    <ClCompile Include="Counter.cpp" />
     <ClCompile Include="LinkedBag.cpp" />
     <ClCompile Include="LinkedQueue.cpp" />
     <ClCompile Include="LinkedStack.cpp" />
@@ -169,6 +171,8 @@
     <ClCompile Include="StdRandom.cpp" />
     <ClCompile Include="Stopwatch.cpp" />
     <ClCompile Include="StopwatchWin32.cpp" />
+    <ClCompile Include="ThreeSum.cpp" />
+    <ClCompile Include="ThreeSumFast.cpp" />
     <ClCompile Include="UF.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="WeightedQuickUnionUF.cpp" />
@@ -178,6 +182,8 @@
     <ClInclude Include="Bag.h" />
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BST.h" />
+    <ClInclude Include="Count.h" />
+    <ClInclude Include="Counter.h" />
     <ClInclude Include="LinkedBag.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="LinkedStack.h" />
@@ -196,6 +202,8 @@
     <ClInclude Include="StdRandom.h" />
     <ClInclude Include="Stopwatch.h" />
     <ClInclude Include="StopwatchWin32.h" />
+    <ClInclude Include="ThreeSum.h" />
+    <ClInclude Include="ThreeSumFast.h" />
     <ClInclude Include="UF.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="WeightedQuickUnionUF.h" />

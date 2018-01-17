@@ -93,6 +93,18 @@
     <ClCompile Include="BST.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Count.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Counter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreeSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreeSumFast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UF.h">
@@ -168,6 +180,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Count.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreeSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreeSumFast.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
