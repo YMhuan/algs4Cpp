@@ -12,7 +12,7 @@ namespace algs4Cpp {
 
 	public:
 		Stopwatch() = default;
-		Stopwatch(const Stopwatch &) = delete;
+		Stopwatch(const Stopwatch &) = default;
 		Stopwatch &operator=(const Stopwatch &) = delete;
 		~Stopwatch() = default;
 

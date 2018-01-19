@@ -1,3 +1,52 @@
-﻿  MemoryLeakTests.cpp
-  algs4Cpp.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4Cpp.exe
-  algs4Cpp.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4Cpp.pdb (Full PDB)
+﻿  WeightedQuickUnionUF.cpp
+  Vector.cpp
+  UF.cpp
+  ThreeSumFast.cpp
+  ThreeSum.cpp
+  StopwatchWin32.cpp
+  Stopwatch.cpp
+  StdRandom.cpp
+  Stack.cpp
+  Shell.cpp
+  ResizingArrayBag.cpp
+  QuickX.cpp
+  QuickUnionUF.cpp
+  QuickFindUF.cpp
+  Quick3way.cpp
+  Quick.cpp
+  Queue.cpp
+  MergeX.cpp
+  MergeBU.cpp
+  Merge.cpp
+  Generating Code...
+  Compiling...
+  MemoryLeakTests.cpp
+  MaxPQ.cpp
+  LinkedStack.cpp
+  LinkedQueue.cpp
+  LinkedBag.cpp
+  DoublingRatio.cpp
+  Date.cpp
+  Counter.cpp
+  Count.cpp
+  BST.cpp
+  BinarySearch.cpp
+  Bag.cpp
+  Average.cpp
+  Generating Code...
+Vector.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+UF.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+ThreeSumFast.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+ThreeSum.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Stopwatch.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+QuickUnionUF.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+QuickFindUF.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Quick3way.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Quick.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Merge.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+DoublingRatio.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Counter.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Count.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+BST.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Average.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  algs4Cpp.vcxproj -> G:\KSC\AlgorithmsC++\algs4Cpp\Debug\algs4Cpp.lib

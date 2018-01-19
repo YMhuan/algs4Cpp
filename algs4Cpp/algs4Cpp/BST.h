@@ -273,12 +273,12 @@ namespace algs4Cpp {
 			return rank(root, key);
 		}
 
-		algs4Cpp::Queue<Key> keys() const {
+		Queue<Key> keys() const {
 			if (isEmpty()) return algs4Cpp::Queue<Key>();
 			return keys(*min(), *max());
 		}
 
-		algs4Cpp::Queue<Key> keys(const Key &lo, const Key &hi) const {
+		Queue<Key> keys(const Key &lo, const Key &hi) const {
 			if(!(lo<=hi)) throw std::invalid_argument("invalid input range");
 			algs4Cpp::Queue<Key> queue;
 			keys(root, queue, lo, hi);
@@ -295,9 +295,9 @@ namespace algs4Cpp {
 			return height(root);
 		}
 
-		algs4Cpp::Queue<Key> levelOrder() const{
-			algs4Cpp::Queue<Key> keys;
-			algs4Cpp::Queue<Node *> queue;
+		Queue<Key> levelOrder() const{
+			Queue<Key> keys;
+			Queue<Node *> queue;
 			queue.enqueue(root);
 			while (!queue.isEmpty()) {
 				Node *x = queue.dequeue();

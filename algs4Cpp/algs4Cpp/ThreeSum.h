@@ -1,5 +1,6 @@
 #pragma once
 #include"Stopwatch.h"
+#include"StopwatchWin32.h"
 #include<vector>
 #include<iostream>
 #include<fstream>
@@ -47,9 +48,12 @@ namespace algs4Cpp {
 				a.push_back(x);
 			}
 			Stopwatch timer;
+			StopwatchWin32 timer2;
 			size_t cnt = count(a);
 			std::cout << "elapsed time = " << timer.elapsedTime() << std::endl;
+			std::cout << "elapsed time = " << timer2.elapsedTime() << std::endl;
 			std::cout << cnt << std::endl;
+
 		}
 	};
 }

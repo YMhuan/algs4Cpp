@@ -161,6 +161,7 @@
     <ClCompile Include="BinarySearchTests.cpp" />
     <ClCompile Include="BSTTests.cpp" />
     <ClCompile Include="LinkedStackTests.cpp" />
+    <ClCompile Include="MaxPQTests.cpp" />
     <ClCompile Include="MergeBUTests.cpp" />
     <ClCompile Include="MergeTests.cpp" />
     <ClCompile Include="MergeXTests.cpp" />

@@ -25,7 +25,7 @@ namespace algs4Cpp {
 
 	public:
 		StopwatchWin32() = default;
-		StopwatchWin32(const StopwatchWin32 &) = delete;
+		StopwatchWin32(const StopwatchWin32 &) = default;
 		StopwatchWin32 &operator=(const StopwatchWin32 &) = delete;
 		~StopwatchWin32() = default;
 

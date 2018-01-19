@@ -1,7 +1,5 @@
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\algs4cpp.pdb
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\algs4cpp.idb
-g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\linkedstack.obj
-g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\memoryleaktests.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\merge.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\mergebu.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\mergex.obj
@@ -17,6 +15,8 @@ g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\stack.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\stdrandom.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\stopwatch.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\stopwatchwin32.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\threesum.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\threesumfast.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\uf.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\vector.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\weightedquickunionuf.obj
@@ -24,8 +24,15 @@ g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\average.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\bag.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\binarysearch.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\bst.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\count.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\counter.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\date.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\doublingratio.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\linkedbag.obj
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\linkedqueue.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\linkedstack.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\maxpq.obj
+g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\memoryleaktests.obj
 g:\ksc\algorithmsc++\algs4cpp\debug\algs4cpp.lib
 g:\ksc\algorithmsc++\algs4cpp\debug\algs4cpp.pdb
 g:\ksc\algorithmsc++\algs4cpp\algs4cpp\debug\algs4cpp.tlog\cl.command.1.tlog

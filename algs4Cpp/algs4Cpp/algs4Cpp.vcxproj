@@ -26,7 +26,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -152,9 +152,12 @@
     <ClCompile Include="BST.cpp" />
     <ClCompile Include="Count.cpp" />
     <ClCompile Include="Counter.cpp" />
+    <ClCompile Include="Date.cpp" />
+    <ClCompile Include="DoublingRatio.cpp" />
     <ClCompile Include="LinkedBag.cpp" />
     <ClCompile Include="LinkedQueue.cpp" />
     <ClCompile Include="LinkedStack.cpp" />
+    <ClCompile Include="MaxPQ.cpp" />
     <ClCompile Include="MemoryLeakTests.cpp" />
     <ClCompile Include="Merge.cpp" />
     <ClCompile Include="MergeBU.cpp" />
@@ -184,9 +187,12 @@
     <ClInclude Include="BST.h" />
     <ClInclude Include="Count.h" />
     <ClInclude Include="Counter.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="DoublingRatio.h" />
     <ClInclude Include="LinkedBag.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="LinkedStack.h" />
+    <ClInclude Include="MaxPQ.h" />
     <ClInclude Include="Merge.h" />
     <ClInclude Include="MergeBU.h" />
     <ClInclude Include="MergeX.h" />

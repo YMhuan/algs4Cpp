@@ -7,8 +7,8 @@ namespace algs4Cpp {
 	template<typename Item> class ResizingArrayBag {
 	private:
 		std::allocator<Item> alloc;
-		Item *a = alloc.allocate(2);
 		size_t nmemory = 2;
+		Item *a = alloc.allocate(nmemory);
 		Item *b = a;
 		size_t n=0;
 
