@@ -80,6 +80,9 @@
     <ClCompile Include="MaxPQTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MinPQTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="algs4CppTest.rc">

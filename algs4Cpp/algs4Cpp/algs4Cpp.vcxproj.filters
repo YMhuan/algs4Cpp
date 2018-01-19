@@ -114,6 +114,9 @@
     <ClCompile Include="MaxPQ.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MinPQ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UF.h">
@@ -210,6 +213,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MaxPQ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinPQ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResizingArrayQueue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

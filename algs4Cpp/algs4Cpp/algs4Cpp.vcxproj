@@ -162,6 +162,7 @@
     <ClCompile Include="Merge.cpp" />
     <ClCompile Include="MergeBU.cpp" />
     <ClCompile Include="MergeX.cpp" />
+    <ClCompile Include="MinPQ.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Quick.cpp" />
     <ClCompile Include="Quick3way.cpp" />
@@ -196,6 +197,7 @@
     <ClInclude Include="Merge.h" />
     <ClInclude Include="MergeBU.h" />
     <ClInclude Include="MergeX.h" />
+    <ClInclude Include="MinPQ.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="Quick.h" />
     <ClInclude Include="Quick3way.h" />
@@ -203,6 +205,7 @@
     <ClInclude Include="QuickUnionUF.h" />
     <ClInclude Include="QuickX.h" />
     <ClInclude Include="ResizingArrayBag.h" />
+    <ClInclude Include="ResizingArrayQueue.h" />
     <ClInclude Include="Shell.h" />
     <ClInclude Include="Stack.h" />
     <ClInclude Include="StdRandom.h" />

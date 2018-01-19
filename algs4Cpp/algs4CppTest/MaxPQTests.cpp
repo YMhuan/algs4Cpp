@@ -34,6 +34,7 @@ namespace algs4CppTest
 				Assert::IsTrue(pq.max() == i, L"", LINE_INFO());
 			}
 
+			Assert::IsTrue(pq2.keys() == vector<int>{9, 8, 7, 6, 5, 4, 3, 2, 1, 0}, L"", LINE_INFO());
 		}
 
 	};

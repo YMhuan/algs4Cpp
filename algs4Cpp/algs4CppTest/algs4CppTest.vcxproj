@@ -165,6 +165,7 @@
     <ClCompile Include="MergeBUTests.cpp" />
     <ClCompile Include="MergeTests.cpp" />
     <ClCompile Include="MergeXTests.cpp" />
+    <ClCompile Include="MinPQTests.cpp" />
     <ClCompile Include="QueueTests.cpp" />
     <ClCompile Include="Quick3wayTests.cpp" />
     <ClCompile Include="QuickTests.cpp" />

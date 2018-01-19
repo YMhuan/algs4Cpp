@@ -72,7 +72,10 @@ namespace algs4Cpp {
 		MaxPQ(const std::function<bool(const Key &, const Key &)> func = std::less<Key>{})
 			:less(func){
 		}
-		MaxPQ(const MaxPQ &) = delete;
+		MaxPQ(const MaxPQ &rhs):nmemory(rhs.nmemory),n(rhs.n),less(rhs.less) {
+			std::uninitialized_copy_n(rhs.a + 1, n, a + 1);
+			b = a + 1 + n;
+		}
 		MaxPQ &operator=(const MaxPQ &) = delete;
 		~MaxPQ() {
 			free();
@@ -167,6 +170,15 @@ namespace algs4Cpp {
 			return iterator(b);
 		}
 
+		std::vector<Key> keys() {
+			std::vector<Key> ret;
+			ret.reserve(n);
+			MaxPQ<Key> tmp(*this);
+			while(!tmp.isEmpty())
+				ret.push_back(tmp.delMax());
+			return ret;
+		}
+
 
 	public:
 		static void mainTest(int argc = 0, char *argv[] = nullptr) {
@@ -178,6 +190,8 @@ namespace algs4Cpp {
 
 			pq.insert(10);
 			assert(pq.max() == 10);
+
+			MaxPQ<int> pq2(pq);
 		}
 	};
 }

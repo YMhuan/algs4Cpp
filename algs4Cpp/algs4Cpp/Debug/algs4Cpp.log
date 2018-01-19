@@ -1,39 +1,4 @@
-﻿  WeightedQuickUnionUF.cpp
-  Vector.cpp
-  UF.cpp
-  ThreeSumFast.cpp
-  ThreeSum.cpp
-  StopwatchWin32.cpp
-  Stopwatch.cpp
-  StdRandom.cpp
-  Stack.cpp
-  Shell.cpp
-  ResizingArrayBag.cpp
-  QuickX.cpp
-  QuickUnionUF.cpp
-  QuickFindUF.cpp
-  Quick3way.cpp
-  Quick.cpp
-  Queue.cpp
-  MergeX.cpp
-  MergeBU.cpp
-  Merge.cpp
-  Generating Code...
-  Compiling...
-  MemoryLeakTests.cpp
-  MaxPQ.cpp
-  LinkedStack.cpp
-  LinkedQueue.cpp
-  LinkedBag.cpp
-  DoublingRatio.cpp
-  Date.cpp
-  Counter.cpp
-  Count.cpp
-  BST.cpp
-  BinarySearch.cpp
-  Bag.cpp
-  Average.cpp
-  Generating Code...
+﻿  MinPQ.cpp
 Vector.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
 UF.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
 ThreeSumFast.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
